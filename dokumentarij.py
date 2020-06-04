@@ -51,7 +51,7 @@ class DokumentarijController:
 
     def get_new_name(self):
         # uzimamo kroz input od korisnika novo  ime te ga dodajemo u listu, ako to ime već nije u listi
-        new_name = self.view.get_new_name()
+        new_name = self.view.put_new_name()
         if new_name in self.model.names:
             print("\n{} je već upisan/a u dokumentariju.".format(new_name.title()))
         else:
